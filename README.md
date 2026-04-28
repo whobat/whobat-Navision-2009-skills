@@ -1,6 +1,6 @@
 # Agent Skills - Dynamics NAV 2009
 
-Dette repository indeholder en samling af specialiserede agent-skills (færdigheder) til AI-kodningsagenter (som f.eks. `pi`). Disse skills gør det muligt for agenten at påtage sig forskellige ekspertroller og udføre specifikke opgaver relateret til Microsoft Dynamics NAV 2009 samt opgraderinger mod Business Central.
+Dette repository indeholder en samling af specialiserede agent-skills (færdigheder) til AI-kodningsagenter. Disse skills gør det muligt for agenten at påtage sig forskellige ekspertroller og udføre specifikke opgaver relateret til Microsoft Dynamics NAV 2009 og opgraderinger mod Business Central.
 
 ## Inkluderede Skills
 
@@ -13,6 +13,20 @@ Dette repository indeholder en samling af specialiserede agent-skills (færdighe
 - **nav2009-rapport:** Udvikling af rapporter (Classic og RTC/RDLC).
 - **nav2009-reviewer:** Code review og kvalitetssikring.
 
-## Hvordan installeres de?
+## Installation
 
-Se filen `skill.md` i roden af dette repository for en detaljeret guide til, hvordan du installerer disse skills lokalt for et projekt eller globalt for alle dine agenter.
+Du kan installere disse skills direkte via kommandolinjen, så de bliver tilgængelige for dine AI-agenter.
+
+### Lokal installation (kun for det aktuelle projekt)
+For at installere alle NAV 2009 skills lokalt i dit nuværende projekt, kør følgende kommando:
+```bash
+npx skills add whobat/Navision-2009-skills
+```
+
+### Global installation (for alle dine projekter)
+For at installere alle NAV 2009 skills globalt, så de er tilgængelige uanset hvilket projekt du arbejder i, kør:
+```bash
+npx skills add -g whobat/Navision-2009-skills
+```
+
+Når installationen er fuldført, vil din agent automatisk kunne benytte disse skills. Du kan for eksempel bede agenten om at *"bruge din nav2009-koder skill til at rette denne fil"*.
