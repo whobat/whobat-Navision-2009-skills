@@ -1,6 +1,6 @@
 # Agent Skills - Dynamics NAV 2009
 
-Dette repository indeholder en samling af specialiserede "Agent Skills" til AI-kodningsagenter (som Pi, Claude Code, GitHub Copilot m.fl., der understøtter Agent Skills standarden). Disse skills gør det muligt for agenten at påtage sig forskellige ekspertroller og udføre specifikke opgaver relateret til Microsoft Dynamics NAV 2009 og opgraderinger mod Business Central.
+Dette repository indeholder en samling af specialiserede "Agent Skills" til AI-kodningsagenter som **GitHub Copilot**, **Claude Code**, **Cursor**, **Windsurf**, **Pi** og mange andre. Disse skills gør det muligt for din AI-agent at påtage sig forskellige ekspertroller og udføre specifikke opgaver relateret til Microsoft Dynamics NAV 2009 og opgraderinger mod Business Central.
 
 ## Inkluderede Skills
 
@@ -15,34 +15,39 @@ Dette repository indeholder en samling af specialiserede "Agent Skills" til AI-k
 
 ## Installation
 
-Dette repository overholder den officielle **[Agent Skills Specification](https://agentskills.io/specification)**, hvilket betyder, at du kan installere skills automatisk via det universelle `skills` CLI-værktøj eller manuelt til din agent.
+Dette repository overholder den officielle **[Agent Skills Specification](https://agentskills.io/specification)**. Du kan derfor nemt installere det via det universelle `skills` CLI-værktøj, som automatisk sørger for at integrere dem i din foretrukne AI-assistent.
 
-### Metode 1: Brug af "skills" CLI (Anbefalet til Claude, Copilot osv.)
-Sørg for at du har [Node.js](https://nodejs.org/) installeret. Hvis du oplever fejl med `npx` (f.eks. `cb.apply is not a function`), anbefales det at installere `skills` globalt først:
+### Metode 1: Automatisk installation med "skills" CLI (Anbefalet)
+Det officielle `skills` CLI-værktøj kan automatisk installere disse skills i GitHub Copilot, Claude Code, Cursor m.fl.
+
+Sørg for at du har [Node.js](https://nodejs.org/) installeret og kør derefter:
 
 ```bash
-# 1. Installer skills CLI (hvis du ikke allerede har det)
+# 1. Installer CLI-værktøjet (undgår npx-fejl på ældre systemer):
 npm install -g skills
 
-# 2. Installer NAV 2009 skills lokalt (kun i dit nuværende projekt):
+# 2. For at installere i dit nuværende projekt:
 skills add whobat/whobat-Navision-2009-skills
 
-# ...eller globalt (for alle dine projekter):
+# ...eller for at installere globalt (tilgængeligt i alle projekter):
 skills add -g whobat/whobat-Navision-2009-skills
 ```
+*Tip: CLI-værktøjet opdager selv hvilke agenter (f.eks. Copilot eller Claude) du bruger, og sætter filerne op det rigtige sted.*
 
-### Metode 2: Direkte i Pi (eller andre agenter via Git)
-Hvis du bruger en agent som **Pi**, kan du klone repositoriet direkte ind i agentens skill-mappe:
+### Metode 2: Manuel installation via Git
+Hvis du foretrækker ikke at bruge et CLI-værktøj, kan du klone repositoriet ind i den standardiserede mappe for agent skills:
 
-**Globalt (virker i alle projekter):**
+**Lokalt (kun i dit nuværende projekt):**
 ```bash
-git clone https://github.com/whobat/whobat-Navision-2009-skills.git ~/.pi/agent/skills/whobat-nav2009-skills
+mkdir -p .agents/skills
+git clone https://github.com/whobat/whobat-Navision-2009-skills.git .agents/skills/whobat-nav2009-skills
 ```
 
-**Lokalt (kun nuværende projekt):**
+**Globalt (virker for alle dine projekter):**
 ```bash
-mkdir -p .pi/skills
-git clone https://github.com/whobat/whobat-Navision-2009-skills.git .pi/skills/whobat-nav2009-skills
+# Opret den globale mappe (Linux/Mac bruger ~/.agents, Windows bruger %USERPROFILE%\.agents)
+mkdir -p ~/.agents/skills
+git clone https://github.com/whobat/whobat-Navision-2009-skills.git ~/.agents/skills/whobat-nav2009-skills
 ```
 
-Når installationen er fuldført, vil din agent automatisk kunne opdage og benytte disse skills i sit system-prompt.
+Når installationen er fuldført, vil din valgte AI-agent automatisk læse filerne og have adgang til den indbyggede NAV 2009-viden i sine instruktioner.
