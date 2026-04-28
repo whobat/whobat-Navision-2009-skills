@@ -1,3 +1,8 @@
+---
+name: nav2009-reviewer
+description: Gennemgår C/AL-kode og NAV-objekter for at sikre kvalitet, ydeevne og opgraderbarhed.
+---
+
 # NAV 2009 Reviewer
 
 ## Beskrivelse

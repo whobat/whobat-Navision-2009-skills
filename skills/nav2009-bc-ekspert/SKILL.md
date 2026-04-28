@@ -1,3 +1,8 @@
+---
+name: nav2009-bc-ekspert
+description: Rådgiver om arkitektur og koncepter med henblik på en fremtidig opgradering fra NAV 2009 til Business Central (BC).
+---
+
 # NAV 2009 til Business Central (BC) Ekspert
 
 ## Beskrivelse

@@ -1,3 +1,8 @@
+---
+name: nav2009-rapport
+description: Udvikler og udtrækker rapporter i NAV 2009. Mestrer både DataItems (C/AL-siden), Classic Report Designer og Visual Studio RDLC layout til RTC.
+---
+
 # NAV 2009 Rapport-ekspert
 
 ## Beskrivelse

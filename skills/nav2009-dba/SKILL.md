@@ -1,3 +1,8 @@
+---
+name: nav2009-dba
+description: Optimerer Microsoft SQL Server specifikt til NAV 2009 og fejlsøger dybe performance- og låseproblemer.
+---
+
 # NAV 2009 DBA & Performance Ekspert
 
 ## Beskrivelse

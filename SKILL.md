@@ -1,3 +1,8 @@
+---
+name: nav2009-skills
+description: Overordnet installations- og overbliksværktøj for alle Microsoft Dynamics NAV 2009 under-skills.
+---
+
 # Navision 2009 Skills - Paraply Skill
 
 ## Description

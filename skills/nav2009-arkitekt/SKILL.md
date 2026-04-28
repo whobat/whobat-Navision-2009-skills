@@ -1,3 +1,8 @@
+---
+name: nav2009-arkitekt
+description: Designer robuste og skalerbare tilpasninger og arkitekturer i NAV 2009 (håndterer både 2-tier Classic og 3-tier RTC strukturer).
+---
+
 # NAV 2009 Arkitekt
 
 ## Beskrivelse

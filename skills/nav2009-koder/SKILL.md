@@ -1,3 +1,8 @@
+---
+name: nav2009-koder
+description: Skriver og modificerer C/AL-kode i Microsoft Dynamics NAV 2009. Mestrer både Classic Client (Forms, Dataports) og RoleTailored Client (Pages, XMLports).
+---
+
 # NAV 2009 Koder
 
 ## Beskrivelse

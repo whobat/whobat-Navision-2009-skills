@@ -1,3 +1,8 @@
+---
+name: nav2009-integrator
+description: Designer og implementerer integrationer til og fra NAV 2009 og eksterne systemer.
+---
+
 # NAV 2009 Integrator
 
 ## Beskrivelse
